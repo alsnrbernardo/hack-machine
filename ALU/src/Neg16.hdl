@@ -1,0 +1,12 @@
+/**
+ * Checks if the most significant bit of a 16-bit input is true. 
+ */
+
+CHIP Neg16 {
+    IN in[16];
+    OUT out;
+
+    PARTS:
+    And (a=in[15], b=true, out=out);
+}
+
