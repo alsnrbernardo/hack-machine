@@ -1,7 +1,11 @@
 /**
  * 1-bit register:
  * If load[t] == 1 then out[t+1] = in[t]
- *                 else out does not change (out[t+1] = out[t])
+ *                 else out[t+1] = out[t] -> out does not change
+ *
+ * Putting it into words, when the load bit in the current clock cycle is asserted,
+ * the output pin of the chip in the next clock cycle is going to emit the value contained
+ * on the input pin of the current cycle.
  */
 
 CHIP Bit {
