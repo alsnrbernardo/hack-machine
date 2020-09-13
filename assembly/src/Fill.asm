@@ -12,6 +12,7 @@
   M = 0
 
   @currentScreenAddress
+  M = 0
 
 (LISTENKEYBOARD)
 
